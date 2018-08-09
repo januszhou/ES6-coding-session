@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "babel-node ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/januszhou/ES6-coding-session/issues"
   },
-  "homepage": "https://github.com/januszhou/ES6-coding-session#readme"
+  "homepage": "https://github.com/januszhou/ES6-coding-session#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
 }

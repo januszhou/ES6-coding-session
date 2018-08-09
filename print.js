@@ -8,6 +8,10 @@ const print = todos => {
   console.log("Pending: y tasks");
   console.log("Completed: z tasks");
   console.log(`Raw output: ${JSON.stringify(todos)}`);
+  console.log("\n");
 };
 
 print([{ id: 1, description: "clean desk", status: "pending"}]);
+
+export default print;
+// export print as default
