@@ -4,9 +4,11 @@
 // Completed: z tasks
 // Raw output: ...
 const print = todos => {
-  console.log("Total: x tasks");
-  console.log("Pending: y tasks");
-  console.log("Completed: z tasks");
+  console.log(`Total: ${todos.length} tasks`);
+  const pendingTasks = todos => todos.filter(t => t.status === 'pending').length;
+  const completeTasks = todos => todos.filter(t => t.status === 'complete').length;
+  console.log(`Pending: ${pendingTasks(todos)} tasks`);
+  console.log(`Completed: ${completeTasks(todos)} tasks`);
   console.log(`Raw output: ${JSON.stringify(todos)}`);
   console.log("\n");
 };
